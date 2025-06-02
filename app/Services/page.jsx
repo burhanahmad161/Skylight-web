@@ -5,12 +5,33 @@ import {
   FaCloud,
   FaPaintBrush,
   FaLightbulb,
+  FaShoppingCart,
+} from "react-icons/fa";
+import {
   FaReact,
   FaNodeJs,
   FaAws,
-  FaShoppingCart,
+  FaGoogle,
+  FaGithub,
+  FaDocker,
+  FaDatabase,
+  FaWordpress,
+  FaShopify,
   FaFigma,
+  FaGitAlt,
+  FaLaravel,
+  FaPhp,
+  FaJava,
+  FaPython,
+  FaAndroid,
+  FaApple,
+  FaLinux,
+  FaWindows,
 } from "react-icons/fa";
+
+
+
+
 export default function Services() {
   const services = [
     {
@@ -77,7 +98,23 @@ export default function Services() {
     { name: "React", icon: <FaReact className="text-sky-400" size={40} /> },
     { name: "Node.js", icon: <FaNodeJs className="text-green-500" size={40} /> },
     { name: "AWS", icon: <FaAws className="text-yellow-400" size={40} /> },
+    { name: "Google Cloud", icon: <FaGoogle className="text-blue-600" size={40} /> },
+    { name: "GitHub", icon: <FaGithub className="text-gray-800" size={40} /> },
+    { name: "Docker", icon: <FaDocker className="text-blue-500" size={40} /> },
+    { name: "Database", icon: <FaDatabase className="text-indigo-600" size={40} /> },
+    { name: "WordPress", icon: <FaWordpress className="text-blue-700" size={40} /> },
+    { name: "Shopify", icon: <FaShopify className="text-green-600" size={40} /> },
     { name: "Figma", icon: <FaFigma className="text-pink-500" size={40} /> },
+    { name: "Git", icon: <FaGitAlt className="text-red-600" size={40} /> },
+    { name: "Laravel", icon: <FaLaravel className="text-red-500" size={40} /> },
+    { name: "PHP", icon: <FaPhp className="text-purple-700" size={40} /> },
+    { name: "Java", icon: <FaJava className="text-red-600" size={40} /> },
+    { name: "Python", icon: <FaPython className="text-yellow-500" size={40} /> },
+    { name: "Android", icon: <FaAndroid className="text-green-700" size={40} /> },
+    { name: "Apple", icon: <FaApple className="text-gray-800" size={40} /> },
+    { name: "Linux", icon: <FaLinux className="text-black" size={40} /> },
+    { name: "Windows", icon: <FaWindows className="text-blue-700" size={40} /> },
+    { name: "Cloud", icon: <FaCloud className="text-blue-400" size={40} /> },
   ];
 
   return (
@@ -151,15 +188,16 @@ export default function Services() {
       {/* Technologies Section */}
       <section className="mt-24 max-w-4xl mx-auto text-center px-6">
         <h2 className="text-3xl font-bold text-sky-300 mb-10">Technologies We Use</h2>
-        <div className="flex justify-center gap-16">
+        <div className="flex flex-wrap justify-center gap-x-16 gap-y-8">
           {technologies.map(({ name, icon }) => (
-            <div key={name} className="flex flex-col items-center space-y-2">
+            <div key={name} className="flex flex-col items-center space-y-2 w-24">
               {icon}
               <span className="text-gray-400 font-medium">{name}</span>
             </div>
           ))}
         </div>
       </section>
+
 
       {/* Call to Action Section */}
       <section className="mt-28 bg-sky-800 rounded-xl max-w-5xl mx-auto p-12 text-center shadow-xl">

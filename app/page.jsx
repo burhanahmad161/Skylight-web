@@ -132,7 +132,6 @@ export default function Home() {
                   key={name}
                   whileHover={{
                     scale: 1.05,
-                    filter: "drop-shadow(0 0 6px #6366f1)",
                   }}
                   className="flex items-center justify-center p-4 bg-gray-700 rounded-lg shadow-md cursor-pointer transition-all duration-300"
                 >

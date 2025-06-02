@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-
+import FAQPage from "../faq/page";
 export default function Career() {
   const jobs = [
     {
@@ -200,21 +200,7 @@ export default function Career() {
 
       {/* FAQs */}
       <section>
-        <h2 className="text-3xl font-bold text-cyan-400 mb-6 text-center">FAQs</h2>
-        <div className="space-y-4 max-w-3xl mx-auto">
-          <div>
-            <h4 className="font-semibold text-gray-100">Is this a remote-only company?</h4>
-            <p className="text-gray-400">Yes! All positions are remote-friendly with flexible hours.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-100">What is the hiring process like?</h4>
-            <p className="text-gray-400">You'll go through an application review, interview, and a small challenge (for dev roles).</p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-gray-100">How long does it take to hear back?</h4>
-            <p className="text-gray-400">We aim to respond within 7 business days.</p>
-          </div>
-        </div>
+        <FAQPage />
       </section>
     </main>
   );
