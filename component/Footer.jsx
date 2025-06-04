@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:flex md:justify-between md:items-start">
         {/* Company Info */}
         <div className="mb-10 md:mb-0 md:w-1/3">
-          <h2 className="text-3xl font-extrabold text-blue-500 tracking-wide">SkyLight</h2>
+          <h2 className="text-3xl font-extrabold text-blue-600 tracking-wide">SkyLight</h2>
           <p className="mt-4 text-gray-400 max-w-sm leading-relaxed">
             Innovating your digital future with smart, scalable technology solutions.  
             We build meaningful connections through technology.

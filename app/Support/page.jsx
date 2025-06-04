@@ -15,7 +15,7 @@ export default function Support() {
 
   return (
     <main className="min-h-screen bg-gray-900 text-gray-100 px-6 py-20 max-w-5xl mx-auto">
-      <h1 className="text-5xl font-bold text-cyan-400 mb-8 text-center">Support</h1>
+      <h1 className="text-5xl font-bold text-blue-600 mb-8 text-center">Support</h1>
       <p className="text-center text-gray-400 max-w-xl mx-auto mb-10">
         Need help? We’re here for you. Browse common topics or send us a direct message below.
       </p>
@@ -42,7 +42,7 @@ export default function Support() {
 
       {/* Contact Form */}
       <section className="bg-gray-800 p-8 rounded-xl shadow-md">
-        <h2 className="text-2xl font-bold mb-6 text-cyan-300">Contact Support</h2>
+        <h2 className="text-2xl font-bold mb-6 text-blue-600">Contact Support</h2>
         <form
           action="mailto:support@skylight.com"
           method="POST"
@@ -87,7 +87,7 @@ export default function Support() {
 
           <button
             type="submit"
-            className="w-full bg-cyan-600 text-white font-semibold py-3 rounded-lg hover:bg-cyan-700 transition"
+            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-cyan-700 transition"
           >
             Send Message
           </button>
@@ -97,7 +97,7 @@ export default function Support() {
       {/* Footer Note */}
       <p className="text-sm text-center text-gray-500 mt-10">
         Or email us directly at{" "}
-        <a href="mailto:support@skylight.com" className="text-cyan-400 underline">
+        <a href="mailto:support@skylight.com" className="text-blue-600 underline">
           support@skylight.com
         </a>{" "}
         — we usually respond within 24–48 hours.

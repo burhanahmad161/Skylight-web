@@ -21,7 +21,7 @@ export default function Home() {
         <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
             Empowering Innovation with{" "}
-            <span className="text-indigo-500">SkyLight</span>
+            <span className="text-blue-600">SkyLight</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
             We craft cutting-edge digital solutions that elevate your business and
@@ -67,17 +67,17 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               {
-                icon: <FaLaptopCode size={40} className="text-indigo-500" />,
+                icon: <FaLaptopCode size={40} className="text-blue-600" />,
                 title: "Web Applications",
                 desc: "Custom-built, scalable websites and platforms using modern web technologies.",
               },
               {
-                icon: <FaMobileAlt size={40} className="text-indigo-500" />,
+                icon: <FaMobileAlt size={40} className="text-blue-600" />,
                 title: "Mobile Solutions",
                 desc: "Intuitive mobile apps for iOS and Android with seamless user experience.",
               },
               {
-                icon: <FaCloud size={40} className="text-indigo-500" />,
+                icon: <FaCloud size={40} className="text-blue-600" />,
                 title: "Cloud Integration",
                 desc: "Secure cloud infrastructure and DevOps practices tailored to your growth.",
               },
@@ -89,7 +89,7 @@ export default function Home() {
                 whileHover={{ scale: 1.05, boxShadow: "0 0 20px #7c3aed" }}
               >
                 {service.icon}
-                <h3 className="mt-6 text-2xl font-semibold text-indigo-400">{service.title}</h3>
+                <h3 className="mt-6 text-2xl font-semibold text-blue-600">{service.title}</h3>
                 <p className="mt-4 text-gray-300">{service.desc}</p>
               </motion.div>
             ))}
@@ -191,7 +191,7 @@ export default function Home() {
                   placeholder="blur"
                 />
                 <div className="p-6">
-                  <h3 className="text-2xl font-semibold text-indigo-500">{title}</h3>
+                  <h3 className="text-2xl font-semibold text-blue-600">{title}</h3>
                   <p className="mt-3 text-gray-300">{desc}</p>
                 </div>
               </motion.div>

@@ -43,7 +43,7 @@ export default function FAQPage() {
 
   return (
     <main className="min-h-screen bg-gray-900 text-gray-100 px-6 py-20 max-w-4xl mx-auto">
-      <h1 className="text-5xl font-bold text-cyan-400 mb-10 text-center">Frequently Asked Questions</h1>
+      <h1 className="text-5xl font-bold text-blue-600 mb-10 text-center">Frequently Asked Questions</h1>
 
       <section className="space-y-6">
         {faqs.map((faq, index) => (
@@ -56,7 +56,7 @@ export default function FAQPage() {
               className="w-full text-left flex justify-between items-center focus:outline-none"
             >
               <span className="text-lg font-semibold">{faq.question}</span>
-              <span className="text-cyan-400 text-2xl">
+              <span className="text-blue-600 text-2xl">
                 {openIndex === index ? "−" : "+"}
               </span>
             </button>

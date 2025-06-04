@@ -6,7 +6,7 @@ export default function About() {
     <main className="bg-gray-900 text-gray-100 font-sans">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-800 to-gray-900 py-24 px-6 text-center">
-        <h1 className="text-5xl font-extrabold text-sky-400">About SkyLight</h1>
+        <h1 className="text-5xl font-extrabold text-blue-600">About SkyLight</h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-400">
           At SkyLight, we craft cutting-edge digital experiences that empower businesses to grow, scale, and connect with their audience in meaningful ways.
         </p>
@@ -14,7 +14,7 @@ export default function About() {
 
       {/* What We Do */}
       <section className="py-20 px-6 max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-sky-300 mb-8">What We Do</h2>
+        <h2 className="text-3xl font-bold text-blue-600 mb-8">What We Do</h2>
         <div className="grid gap-10 md:grid-cols-3 text-left">
           {[
             {
@@ -38,7 +38,7 @@ export default function About() {
               className="bg-gray-800 rounded-xl p-6 border border-gray-700 shadow-md hover:shadow-sky-800/40 transition duration-300"
             >
               <div className="text-4xl mb-4">{icon}</div>
-              <h3 className="text-xl font-semibold text-sky-300 mb-2">{title}</h3>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2">{title}</h3>
               <p className="text-gray-400">{desc}</p>
             </div>
           ))}
@@ -47,7 +47,7 @@ export default function About() {
 
       {/* Mission & Vision */}
       <section className="py-20 px-6 max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-sky-300 mb-12">Our Mission & Vision</h2>
+        <h2 className="text-3xl font-bold text-center text-blue-600 mb-12">Our Mission & Vision</h2>
         <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-16">
           <div className="relative border-l-4 border-sky-400 pl-6">
             <h3 className="text-2xl font-bold text-sky-200 mb-2">Our Mission</h3>
@@ -66,7 +66,7 @@ export default function About() {
 
       {/* Our Values */}
       <section className="bg-gray-800 py-20 px-6">
-        <h2 className="text-3xl font-bold text-sky-300 text-center mb-12">Core Values</h2>
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Core Values</h2>
         <div className="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto text-center">
           {[
             { title: "Integrity", desc: "We uphold the highest standards in every project." },
@@ -74,7 +74,7 @@ export default function About() {
             { title: "Collaboration", desc: "We believe success is built on teamwork and trust." },
           ].map(({ title, desc }) => (
             <div key={title} className="p-6 bg-gray-900 border border-gray-700 rounded-xl">
-              <h3 className="text-xl font-semibold text-sky-300 mb-2">{title}</h3>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2">{title}</h3>
               <p className="text-gray-400">{desc}</p>
             </div>
           ))}
@@ -83,7 +83,7 @@ export default function About() {
 
       {/* Team Section */}
       <section className="py-20 px-6 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-sky-300 text-center mb-12">Meet Our Team</h2>
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Meet Our Team</h2>
         <div className="grid gap-10 md:grid-cols-3">
           {[
             {
@@ -109,18 +109,18 @@ export default function About() {
               key={name}
               className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 text-center hover:scale-[1.02] transition-transform"
             >
-              <div className="h-24 w-24 mx-auto mb-4 rounded-full bg-sky-700 flex items-center justify-center text-white text-2xl font-bold">
+              <div className="h-24 w-24 mx-auto mb-4 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl font-bold">
                 {name
                   .split(" ")
                   .map((n) => n[0])
                   .join("")}
               </div>
               <h3 className="text-xl font-semibold text-gray-100">{name}</h3>
-              <p className="text-sky-400 font-medium">{role}</p>
+              <p className="text-blue-600 font-medium">{role}</p>
               <p className="mt-2 text-gray-400 text-sm">{bio}</p>
-              <div className="flex justify-center gap-4 mt-4 text-sky-400 text-lg">
+              <div className="flex justify-center gap-4 mt-4 text-blue-600 text-lg">
                 {socials.map((icon, i) => (
-                  <span key={i} className="hover:text-sky-300 transition">{icon}</span>
+                  <span key={i} className="hover:text-blue-600 transition">{icon}</span>
                 ))}
               </div>
             </div>

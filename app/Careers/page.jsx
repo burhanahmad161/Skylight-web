@@ -39,7 +39,7 @@ export default function Career() {
     <main className="min-h-screen bg-gray-900 text-gray-100 px-6 py-20 max-w-6xl mx-auto space-y-24">
       {/* Hero Section */}
       <section className="text-center">
-        <h1 className="text-5xl font-extrabold text-cyan-400 mb-4">
+        <h1 className="text-5xl font-extrabold text-blue-600 mb-4">
           Build the Future with Us
         </h1>
         <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -57,7 +57,7 @@ export default function Career() {
           { title: "Inclusivity", desc: "We value diverse perspectives and equal opportunity." },
         ].map((item, index) => (
           <div key={index} className="p-6 border border-gray-700 rounded-xl bg-gray-800">
-            <h3 className="text-xl font-bold text-cyan-400 mb-2">{item.title}</h3>
+            <h3 className="text-xl font-bold text-blue-600 mb-2">{item.title}</h3>
             <p className="text-gray-300">{item.desc}</p>
           </div>
         ))}
@@ -65,7 +65,7 @@ export default function Career() {
 
       {/* Open Positions */}
       <section>
-        <h2 className="text-4xl font-bold text-cyan-400 mb-10 text-center">
+        <h2 className="text-4xl font-bold text-blue-600 mb-10 text-center">
           Open Positions
         </h2>
         <div className="grid gap-8 md:grid-cols-3">
@@ -82,7 +82,7 @@ export default function Career() {
               className="border border-gray-700 rounded-xl p-6 shadow-md cursor-pointer hover:shadow-cyan-500/50 transition focus:outline-none focus:ring-4 focus:ring-cyan-500"
             >
               <h3 className="text-xl font-semibold text-gray-100 mb-1">{job.title}</h3>
-              <p className="text-cyan-400 font-medium mb-3">{job.location}</p>
+              <p className="text-blue-600 font-medium mb-3">{job.location}</p>
               <p className="text-gray-300 text-sm">{job.description}</p>
             </article>
           ))}
@@ -91,7 +91,7 @@ export default function Career() {
 
       {/* Benefits */}
       <section className="text-center">
-        <h2 className="text-4xl font-bold text-cyan-400 mb-8">Perks & Benefits</h2>
+        <h2 className="text-4xl font-bold text-blue-600 mb-8">Perks & Benefits</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
             "100% Remote Work",
@@ -115,7 +115,7 @@ export default function Career() {
           aria-live="polite"
           className="max-w-3xl mx-auto p-10 border border-gray-700 rounded-xl shadow-lg bg-gray-800"
         >
-          <h2 className="text-3xl font-bold text-cyan-400 mb-6">
+          <h2 className="text-3xl font-bold text-blue-600 mb-6">
             Apply for {selectedJob.title}
           </h2>
 
@@ -191,7 +191,7 @@ export default function Career() {
 
           <button
             onClick={() => setSelectedJob(null)}
-            className="mt-8 text-cyan-400 underline hover:text-cyan-600 focus:outline-none"
+            className="mt-8 text-blue-600 underline hover:text-cyan-600 focus:outline-none"
           >
             ← Back to job listings
           </button>

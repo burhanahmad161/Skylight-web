@@ -4,7 +4,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaLinkedin
 export default function Contact() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-gray-300 px-8 py-24 max-w-5xl mx-auto rounded-lg shadow-xl mb-16">
-      <h1 className="text-5xl font-extrabold text-blue-400 text-center mb-12 tracking-wide">
+      <h1 className="text-5xl font-extrabold text-blue-600 text-center mb-12 tracking-wide">
         Contact Us
       </h1>
 
@@ -65,7 +65,7 @@ export default function Contact() {
 
       {/* FAQ Section */}
       <section className="mt-20 bg-gray-800 bg-opacity-40 rounded-xl p-10 shadow-inner">
-        <h2 className="text-3xl font-semibold text-blue-400 mb-8 text-center">Common Questions</h2>
+        <h2 className="text-3xl font-semibold text-blue-600 mb-8 text-center">Common Questions</h2>
         <ul className="space-y-6 max-w-3xl mx-auto text-gray-300">
           <li>
             <strong>How long does it take to get a response?</strong>
@@ -90,7 +90,7 @@ export default function Contact() {
 
       {/* Map Placeholder */}
       <section className="mt-20">
-        <h2 className="text-3xl font-semibold text-blue-400 mb-6 text-center">Our Location</h2>
+        <h2 className="text-3xl font-semibold text-blue-600 mb-6 text-center">Our Location</h2>
         <div className="w-full h-64 rounded-xl overflow-hidden shadow-lg border border-gray-700">
           <iframe
             title="SkyLight Location"
@@ -121,7 +121,7 @@ function FloatingInput({ label, id, name, type, required }) {
       />
       <label
         htmlFor={id}
-        className="absolute left-4 top-2 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-blue-400 peer-focus:text-sm cursor-text select-none"
+        className="absolute left-4 top-2 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-blue-600 peer-focus:text-sm cursor-text select-none"
       >
         {label}
       </label>
@@ -142,7 +142,7 @@ function FloatingTextarea({ label, id, name, required }) {
       />
       <label
         htmlFor={id}
-        className="absolute left-4 top-2 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-blue-400 peer-focus:text-sm cursor-text select-none"
+        className="absolute left-4 top-2 text-gray-400 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-600 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-blue-600 peer-focus:text-sm cursor-text select-none"
       >
         {label}
       </label>
@@ -152,8 +152,8 @@ function FloatingTextarea({ label, id, name, required }) {
 
 function ContactInfoItem({ icon, label, value, href }) {
   return (
-    <div className="flex items-center space-x-4 text-gray-300 hover:text-blue-400 transition cursor-default">
-      <div className="text-blue-400 text-2xl">{icon}</div>
+    <div className="flex items-center space-x-4 text-gray-300 hover:text-blue-600 transition cursor-default">
+      <div className="text-blue-600 text-2xl">{icon}</div>
       <div>
         <p className="text-sm font-semibold">{label}</p>
         {href ? (
