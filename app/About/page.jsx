@@ -1,6 +1,7 @@
 "use client";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
-
+import Image from "next/image";
+import Foun from "../../Assets/Cloud.jpg";
 export default function About() {
   return (
     <main className="bg-gray-900 text-gray-100 font-sans">
@@ -81,48 +82,166 @@ export default function About() {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Partners Section */}
       <section className="py-20 px-6 max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Meet Our Team</h2>
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Our Partners</h2>
         <div className="grid gap-10 md:grid-cols-3">
           {[
             {
-              name: "Alice Johnson",
-              role: "CEO",
-              bio: "Leading vision and strategy with over 15 years of experience.",
-              socials: [<FaLinkedin />, <FaTwitter />],
+              name: "Cargo Logistics",
+              description: "Leading logistics provider with a global reach.",
+              website: "https://zipboxcargologistics.com/",
+              logo: Foun, // Replace with actual image if available
             },
             {
-              name: "Michael Lee",
-              role: "CTO",
-              bio: "Tech innovator passionate about building scalable solutions.",
-              socials: [<FaGithub />, <FaLinkedin />],
+              name: "Falconfly Tecnologies",
+              description: "Empowering businesses with cutting-edge technology solutions.",
+              website: "https://www.falconflytechnology.com/",
+              logo: Foun,
             },
             {
-              name: "Sara Kim",
-              role: "Head of Design",
-              bio: "Crafting beautiful and user-friendly interfaces.",
-              socials: [<FaLinkedin />],
+              name: "Skylight Glass",
+              description: "Innovative glass solutions for modern architecture.",
+              website: "https://skylight-ksa-svkh.vercel.app/",
+              logo: Foun,
             },
-          ].map(({ name, role, bio, socials }) => (
+          ].map(({ name, description, website, logo }) => (
             <div
               key={name}
               className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 text-center hover:scale-[1.02] transition-transform"
             >
+              <div className="h-24 w-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <Image
+                  src={logo}
+                  alt={name}
+                  width={96}
+                  height={96}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-100">{name}</h3>
+              <p className="text-gray-400 mt-2 mb-4 text-sm">{description}</p>
+              <a
+                href={website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+              >
+                Visit
+              </a>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-20 px-6 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Meet Our Leadership</h2>
+
+        <div className="flex justify-center text-center mb-12">
+          <div className="gap-10 md:grid-cols-3">
+            <div className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 text-center hover:scale-[1.02] transition-transform">
               <div className="h-24 w-24 mx-auto mb-4 rounded-full bg-blue-600 flex items-center justify-center text-white text-2xl font-bold">
-                {name
-                  .split(" ")
-                  .map((n) => n[0])
-                  .join("")}
+                <Image
+                  src={Foun}
+                  alt="Adham M Ibrahim Sindi"
+                  width={96}
+                  height={96}
+                  className="object-cover rounded-full w-full h-full"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-100">Adham M Ibrahim Sindi</h3>
+              <p className="text-green-600 font-medium">Founder</p>
+              <p className="mt-2 text-gray-400 text-sm">
+                Visionary entrepreneur driving innovation and building lasting partnerships for business excellence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div className="grid gap-10 md:grid-cols-3">
+          {[
+            {
+              name: "Qallab Abbas",
+              role: "Founder and CEO",
+              bio: "Leading vision and strategy with over 15 years of experience.",
+              image: Foun,
+            },
+            {
+              name: "Saima Tariq",
+              role: "General Manager",
+              bio: "Results-driven sales leader with a proven track record of driving revenue growth and building high-performing teams. ",
+              image: Foun,
+            },
+            {
+              name: "Qallab abbas",
+              role: "Chief Operations Officer",
+              bio: "Operations expert streamlining our processes for maximum efficiency.",
+              image: Foun,
+            },
+          ].map(({ name, role, bio, image }) => (
+            <div
+              key={name}
+              className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 text-center hover:scale-[1.02] transition-transform"
+            >
+              <div className="h-24 w-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <Image
+                  src={image}
+                  alt={name}
+                  width={96}
+                  height={96}
+                  className="object-cover w-full h-full"
+                />
               </div>
               <h3 className="text-xl font-semibold text-gray-100">{name}</h3>
               <p className="text-blue-600 font-medium">{role}</p>
               <p className="mt-2 text-gray-400 text-sm">{bio}</p>
-              <div className="flex justify-center gap-4 mt-4 text-blue-600 text-lg">
-                {socials.map((icon, i) => (
-                  <span key={i} className="hover:text-blue-600 transition">{icon}</span>
-                ))}
+            </div>
+          ))}
+        </div>
+      </section>
+      {/* Development Team Section */}
+      <section className="py-20 px-6 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-12">Inside Skylight</h2>
+        <div className="grid gap-10 md:grid-cols-3">
+          {[
+            {
+              name: "Qallab Abbas",
+              role: "Founder and CEO",
+              bio: "Leading vision and strategy with over 15 years of experience.",
+              image: Foun,
+            },
+            {
+              name: "Saima Tariq",
+              role: "General Manager",
+              bio: "Results-driven sales leader with a proven track record of driving revenue growth and building high-performing teams. ",
+              image: Foun,
+            },
+            {
+              name: "Qallab abbas",
+              role: "Chief Operations Officer",
+              bio: "Operations expert streamlining our processes for maximum efficiency.",
+              image: Foun,
+            },
+          ].map(({ name, role, bio, image }) => (
+            <div
+              key={name}
+              className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 text-center hover:scale-[1.02] transition-transform"
+            >
+              <div className="h-24 w-24 mx-auto mb-4 rounded-full overflow-hidden">
+                <Image
+                  src={image}
+                  alt={name}
+                  width={96}
+                  height={96}
+                  className="object-cover w-full h-full"
+                />
               </div>
+              <h3 className="text-xl font-semibold text-gray-100">{name}</h3>
+              <p className="text-blue-600 font-medium">{role}</p>
+              <p className="mt-2 text-gray-400 text-sm">{bio}</p>
             </div>
           ))}
         </div>

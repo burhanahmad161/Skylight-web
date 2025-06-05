@@ -57,12 +57,12 @@ export default function Footer() {
               <li>123 SkyLight Ave, Tech City, USA</li>
               <li>
                 <a href="mailto:contact@skylight.com" className="hover:text-blue-500 transition duration-300">
-                  contact@skylight.com
+                  contact@skylightksa.com
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="hover:text-blue-500 transition duration-300">
-                  +1 (234) 567-890
+                  +966 55 426 0602
                 </a>
               </li>
             </ul>

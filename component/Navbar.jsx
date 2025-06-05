@@ -5,27 +5,39 @@ import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const menuButtonRef = useRef(null);
 
-  // Close menu if clicked outside
+  // Handle outside click for menu
   useEffect(() => {
-    function handleClickOutside(event) {
+    const handleClickOutside = (event) => {
       if (
         menuButtonRef.current &&
         !menuButtonRef.current.contains(event.target)
       ) {
         setMenuOpen(false);
       }
-    }
+    };
+
     if (menuOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
     }
+
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuOpen]);
+
+  // Handle scroll to enlarge navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
     { name: "Home", href: "/" },
@@ -36,8 +48,11 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-gray-900 shadow-md fixed top-0 w-full z-50">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <header
+      className={`bg-gray-700 fixed top-0 w-[75%] mt-3 z-50 ml-[13%] rounded-full shadow-md transition-all duration-300 ${scrolled ? "py-6" : "py-3"
+        }`}
+    >
+      <div className="max-w-7xl mx-auto px-0 md:px-4 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-blue-600">
           SkyLight Technologies
@@ -56,8 +71,8 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button with relative container */}
-        <div className="relative md:hidden">
+        {/* Mobile Menu Button */}
+        <div className="relative md:hidden" ref={menuButtonRef}>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-white"
@@ -83,6 +98,7 @@ const Navbar = () => {
         </div>
       </div>
     </header>
+
   );
 };
 

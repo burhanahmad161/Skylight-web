@@ -6,7 +6,12 @@ import { FaLaptopCode, FaMobileAlt, FaCloud } from "react-icons/fa";
 import CloudImage from "../Assets/Cloud.jpg";
 import Ecommerce from "../Assets/Ecommerce.jpg";
 import Healthcare from "../Assets/health.jpg";
+import IMG1 from "../Assets/IMG1.jpg";
+import IMG2 from "../Assets/IMG2.jpg";
+import IMG3 from "../Assets/IMG3.jpg";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -14,16 +19,46 @@ const fadeInUp = {
 };
 
 export default function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [IMG1, IMG2, IMG3];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 4000); // 4 seconds per image
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <main className="bg-gray-900 min-h-screen text-gray-200">
       {/* Hero Section */}
-      <section className="min-h-[90vh] flex flex-col justify-center items-center px-6 text-center">
-        <motion.div initial="hidden" animate="visible" variants={fadeInUp} className="max-w-4xl">
+      <section className="relative min-h-[90vh] flex flex-col justify-center items-center px-6 text-center overflow-hidden">
+        {/* Background Image Slider */}
+        <div className="absolute inset-0 z-0 transition-opacity duration-1000">
+          <Image
+            src={images[currentImageIndex]}
+            alt="Background"
+            className="object-cover blur-sm"
+            priority
+            fill
+            quality={90}   // increase quality if needed
+          />
+          <div className="absolute inset-0 blur-2xl" />
+        </div>
+
+        {/* Foreground Content */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInUp}
+          className="relative z-10 max-w-4xl"
+        >
           <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
             Empowering Innovation with{" "}
             <span className="text-blue-600">SkyLight</span>
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
             We craft cutting-edge digital solutions that elevate your business and
             transform your vision into reality.
           </p>
@@ -35,6 +70,7 @@ export default function Home() {
           </Link>
         </motion.div>
       </section>
+
 
       {/* About Section */}
       <section className="py-20 px-6 bg-gray-800">
