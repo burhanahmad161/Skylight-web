@@ -49,12 +49,12 @@ const Navbar = () => {
 
   return (
     <header
-      className={`bg-gray-700 fixed top-0 w-[75%] mt-3 z-50 ml-[13%] rounded-full shadow-md transition-all duration-300 ${scrolled ? "py-6" : "py-3"
+      className={`bg-[#0B0B0F] fixed top-0 w-[75%] mt-3 z-50 ml-[13%] rounded-full shadow-md transition-all duration-300 ${scrolled ? "py-6" : "py-4"
         }`}
     >
       <div className="max-w-7xl mx-auto px-0 md:px-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-blue-600">
+        <Link href="/" className="text-2xl font-bold text-purple-500">
           SkyLight Technologies
         </Link>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="text-white hover:text-blue-600 font-medium transition"
+              className="text-white hover:text-purple-400 font-medium transition"
             >
               {link.name}
             </Link>
@@ -82,12 +82,12 @@ const Navbar = () => {
           </button>
 
           {menuOpen && (
-            <div className="absolute right-0 mt-2 w-48 bg-gray-800 rounded-lg shadow-lg overflow-hidden z-50 animate-slide-in mr-4">
+            <div className="absolute right-0 mt-2 w-48 bg-[#1C1C27] rounded-lg shadow-lg overflow-hidden z-50 animate-slide-in mr-4">
               {links.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
-                  className="block px-4 py-3 text-white hover:bg-blue-600 hover:text-white transition"
+                  className="block px-4 py-3 text-white hover:bg-purple-600 hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.name}
@@ -98,8 +98,8 @@ const Navbar = () => {
         </div>
       </div>
     </header>
-
   );
+
 };
 
 export default Navbar;

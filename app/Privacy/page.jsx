@@ -2,10 +2,10 @@
 
 export default function PrivacyPolicy() {
   return (
-    <main className="bg-gray-900 text-gray-200 min-h-screen px-6 py-20">
+    <main className="bg-[#0F0F1A] text-gray-200 min-h-screen px-6 py-20">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700/80 p-10 rounded-3xl shadow-xl mb-14 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-purple-600 to-purple-700/80 p-10 rounded-3xl shadow-xl mb-14 relative overflow-hidden">
           <h1 className="text-5xl font-bold text-white drop-shadow-md z-10 relative">Privacy Policy</h1>
           <p className="mt-2 text-gray-100 text-sm z-10 relative">Effective Date: June 2, 2025</p>
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
@@ -14,7 +14,6 @@ export default function PrivacyPolicy() {
 
         {/* Section Wrapper */}
         <div className="space-y-10 text-sm sm:text-base">
-          {/* Section */}
           {[
             {
               title: "1. Information We Collect",
@@ -72,16 +71,16 @@ export default function PrivacyPolicy() {
               content: (
                 <>
                   Have questions? Email us at{" "}
-                  <span className="text-blue-600 font-medium">privacy@skylight.com</span>
+                  <span className="text-purple-400 font-medium">privacy@skylight.com</span>
                 </>
               ),
             },
           ].map((section, idx) => (
             <div
               key={idx}
-              className="bg-gray-800/50 border border-gray-700 p-6 rounded-2xl hover:shadow-lg transition duration-300"
+              className="bg-[#1A1A2E] border border-purple-700 p-6 rounded-2xl hover:shadow-purple-500/20 transition duration-300"
             >
-              <h2 className="text-lg font-semibold text-blue-600 mb-2">{section.title}</h2>
+              <h2 className="text-lg font-semibold text-purple-400 mb-2">{section.title}</h2>
               <div className="text-gray-300">{section.content}</div>
             </div>
           ))}

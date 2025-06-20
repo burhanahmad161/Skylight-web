@@ -1,14 +1,12 @@
-// components/Footer.js
-
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 pt-12 pb-8">
+    <footer className="bg-[#0B0B0F] text-gray-300 pt-12 pb-8">
       <div className="max-w-7xl mx-auto px-6 md:flex md:justify-between md:items-start">
         {/* Company Info */}
         <div className="mb-10 md:mb-0 md:w-1/3">
-          <h2 className="text-3xl font-extrabold text-blue-600 tracking-wide">SkyLight</h2>
+          <h2 className="text-3xl font-extrabold text-purple-500 tracking-wide">SkyLight</h2>
           <p className="mt-4 text-gray-400 max-w-sm leading-relaxed">
-            Innovating your digital future with smart, scalable technology solutions.  
+            Innovating your digital future with smart, scalable technology solutions.
             We build meaningful connections through technology.
           </p>
         </div>
@@ -19,19 +17,19 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Company</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="/" className="hover:text-blue-500 transition duration-300">Home</a>
+                <a href="/" className="hover:text-purple-400 transition duration-300">Home</a>
               </li>
               <li>
-                <a href="/About" className="hover:text-blue-500 transition duration-300">About Us</a>
+                <a href="/About" className="hover:text-purple-400 transition duration-300">About Us</a>
               </li>
               <li>
-                <a href="/Services" className="hover:text-blue-500 transition duration-300">Services</a>
+                <a href="/Services" className="hover:text-purple-400 transition duration-300">Services</a>
               </li>
               <li>
-                <a href="/Careers" className="hover:text-blue-500 transition duration-300">Careers</a>
+                <a href="/Careers" className="hover:text-purple-400 transition duration-300">Careers</a>
               </li>
               <li>
-                <a href="/Contact" className="hover:text-blue-500 transition duration-300">Contact</a>
+                <a href="/Contact" className="hover:text-purple-400 transition duration-300">Contact</a>
               </li>
             </ul>
           </div>
@@ -40,13 +38,13 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Resources</h3>
             <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="/faq" className="hover:text-blue-500 transition duration-300">FAQ</a>
+                <a href="/faq" className="hover:text-purple-400 transition duration-300">FAQ</a>
               </li>
               <li>
-                <a href="/Support" className="hover:text-blue-500 transition duration-300">Support</a>
+                <a href="/Support" className="hover:text-purple-400 transition duration-300">Support</a>
               </li>
               <li>
-                <a href="/Privacy" className="hover:text-blue-500 transition duration-300">Privacy Policy</a>
+                <a href="/Privacy" className="hover:text-purple-400 transition duration-300">Privacy Policy</a>
               </li>
             </ul>
           </div>
@@ -56,12 +54,12 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li>123 SkyLight Ave, Tech City, USA</li>
               <li>
-                <a href="mailto:contact@skylight.com" className="hover:text-blue-500 transition duration-300">
+                <a href="mailto:contact@skylightksa.com" className="hover:text-purple-400 transition duration-300">
                   contact@skylightksa.com
                 </a>
               </li>
               <li>
-                <a href="tel:+1234567890" className="hover:text-blue-500 transition duration-300">
+                <a href="tel:+1234567890" className="hover:text-purple-400 transition duration-300">
                   +966 55 426 0602
                 </a>
               </li>
@@ -76,7 +74,7 @@ export default function Footer() {
                   href="https://twitter.com/skylight"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-500 transition duration-300"
+                  className="hover:text-purple-400 transition duration-300"
                 >
                   Twitter
                 </a>
@@ -86,7 +84,7 @@ export default function Footer() {
                   href="https://linkedin.com/company/skylight"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-500 transition duration-300"
+                  className="hover:text-purple-400 transition duration-300"
                 >
                   LinkedIn
                 </a>
@@ -96,7 +94,7 @@ export default function Footer() {
                   href="https://facebook.com/skylight"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-500 transition duration-300"
+                  className="hover:text-purple-400 transition duration-300"
                 >
                   Facebook
                 </a>
@@ -106,7 +104,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-12 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm select-none">
+      <div className="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm select-none">
         &copy; {new Date().getFullYear()} SkyLight. All rights reserved.
       </div>
     </footer>

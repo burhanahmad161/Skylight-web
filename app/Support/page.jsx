@@ -14,24 +14,24 @@ export default function Support() {
   const [selectedTopic, setSelectedTopic] = useState(null);
 
   return (
-    <main className="min-h-screen bg-gray-900 text-gray-100 px-6 py-20 max-w-5xl mx-auto">
-      <h1 className="text-5xl font-bold text-blue-600 mb-8 text-center">Support</h1>
+    <main className="min-h-screen bg-[#0F0F1A] text-gray-100 px-6 py-20 max-w-5xl mx-auto mt-16">
+      <h1 className="text-5xl font-bold text-purple-500 mb-8 text-center">Support</h1>
       <p className="text-center text-gray-400 max-w-xl mx-auto mb-10">
         Need help? We’re here for you. Browse common topics or send us a direct message below.
       </p>
 
       {/* Help Topics */}
       <section className="mb-12">
-        <h2 className="text-xl font-semibold mb-4">Common Topics</h2>
+        <h2 className="text-xl font-semibold text-purple-400 mb-4">Common Topics</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {topics.map((topic, i) => (
             <button
               key={i}
               onClick={() => setSelectedTopic(topic)}
-              className={`px-4 py-3 rounded-lg border border-cyan-600 text-sm font-medium transition ${
+              className={`px-4 py-3 rounded-lg border text-sm font-medium transition ${
                 selectedTopic === topic
-                  ? "bg-cyan-600 text-white"
-                  : "bg-gray-800 hover:bg-gray-700"
+                  ? "bg-purple-600 text-white border-purple-600"
+                  : "bg-[#1A1A2E] border-purple-700 hover:bg-purple-700 hover:text-white"
               }`}
             >
               {topic}
@@ -41,8 +41,8 @@ export default function Support() {
       </section>
 
       {/* Contact Form */}
-      <section className="bg-gray-800 p-8 rounded-xl shadow-md">
-        <h2 className="text-2xl font-bold mb-6 text-blue-600">Contact Support</h2>
+      <section className="bg-[#1A1A2E] p-8 rounded-xl shadow-lg">
+        <h2 className="text-2xl font-bold mb-6 text-purple-500">Contact Support</h2>
         <form
           action="mailto:support@skylight.com"
           method="POST"
@@ -56,7 +56,7 @@ export default function Support() {
               type="text"
               name="Name"
               required
-              className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:ring-2 focus:ring-cyan-500 outline-none"
+              className="w-full px-4 py-3 rounded-lg bg-[#0F0F1A] border border-gray-700 text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 outline-none"
               placeholder="John Doe"
             />
           </div>
@@ -67,7 +67,7 @@ export default function Support() {
               type="email"
               name="Email"
               required
-              className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:ring-2 focus:ring-cyan-500 outline-none"
+              className="w-full px-4 py-3 rounded-lg bg-[#0F0F1A] border border-gray-700 text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 outline-none"
               placeholder="john@example.com"
             />
           </div>
@@ -80,14 +80,14 @@ export default function Support() {
               name="Message"
               rows={5}
               required
-              className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:ring-2 focus:ring-cyan-500 outline-none"
+              className="w-full px-4 py-3 rounded-lg bg-[#0F0F1A] border border-gray-700 text-gray-100 placeholder-gray-500 focus:ring-2 focus:ring-purple-500 outline-none"
               placeholder="Write your message here..."
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white font-semibold py-3 rounded-lg hover:bg-cyan-700 transition"
+            className="w-full bg-purple-600 text-white font-semibold py-3 rounded-lg hover:bg-purple-700 focus:ring-4 focus:ring-purple-500 transition"
           >
             Send Message
           </button>
@@ -97,7 +97,7 @@ export default function Support() {
       {/* Footer Note */}
       <p className="text-sm text-center text-gray-500 mt-10">
         Or email us directly at{" "}
-        <a href="mailto:support@skylight.com" className="text-blue-600 underline">
+        <a href="mailto:support@skylight.com" className="text-purple-400 underline hover:text-purple-300">
           support@skylight.com
         </a>{" "}
         — we usually respond within 24–48 hours.
