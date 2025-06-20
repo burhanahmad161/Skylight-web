@@ -52,7 +52,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-gray-200">Contact</h3>
             <ul className="space-y-3 text-gray-400">
-              <li>123 SkyLight Ave, Tech City, USA</li>
+              <li>169B Architect Engineering housing society, Lahore Pakistan</li>
               <li>
                 <a href="mailto:contact@skylightksa.com" className="hover:text-purple-400 transition duration-300">
                   contact@skylightksa.com

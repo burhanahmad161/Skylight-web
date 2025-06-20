@@ -48,7 +48,7 @@ export default function FAQPage() {
         Frequently Asked Questions
       </h1>
 
-      <section className="space-y-6">
+      <section className="space-y-6 px-48">
         {faqs.map((faq, index) => (
           <div
             key={index}

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
+import EmblaCarousel from "../../component/EmblaCarousel";
 import {
   FaLaptopCode,
   FaMobileAlt,
@@ -113,7 +113,6 @@ export default function Services() {
     { name: "Linux", icon: <FaLinux className="text-white" size={40} /> },
     { name: "Windows", icon: <FaWindows className="text-blue-500" size={40} /> },
   ];
-
   return (
     <main className="bg-[#0F0F1A] text-gray-100 font-sans">
       <section className="relative min-h-[100vh] flex flex-col justify-center items-center px-6 text-center overflow-hidden text-white bg-gradient-to-br from-[#1F0A3E] via-[#0B0B0F] to-[#1F0A3E]">
@@ -196,18 +195,19 @@ export default function Services() {
       {/* Technologies Section */}
       <section className="mt-24 max-w-4xl mx-auto text-center px-6">
         <h2 className="text-3xl font-bold text-purple-500 mb-10">Technologies We Use</h2>
-        <div className="flex flex-wrap justify-center gap-x-16 gap-y-8">
+        {/* <div className="flex flex-wrap justify-center gap-x-16 gap-y-8">
           {technologies.map(({ name, icon }) => (
             <div key={name} className="flex flex-col items-center space-y-2 w-24">
               {icon}
               <span className="text-gray-400 font-medium">{name}</span>
             </div>
           ))}
-        </div>
+        </div> */}
+        <EmblaCarousel items={technologies} />
       </section>
 
       {/* Call to Action */}
-      <section className="mt-28 bg-purple-800 rounded-xl max-w-5xl mx-auto p-12 text-center shadow-xl">
+      <section className="mt-28 bg-purple-800 rounded-xl max-w-5xl mx-auto p-12 text-center shadow-xl mb-16">
         <h2 className="text-3xl font-bold text-white mb-4">Ready to start your project?</h2>
         <p className="text-purple-200 mb-8 max-w-xl mx-auto">
           Contact us today to get a free consultation and let’s build something amazing together.

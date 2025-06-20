@@ -47,7 +47,7 @@ export default function Career() {
             transition={{ duration: 1.8, ease: "easeInOut" }}
             className="relative z-10 w-full px-4 sm:px-6 md:px-8"
           >
-            <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center space-y-6 mt-32">
+            <div className="max-w-4xl mx-auto flex flex-col items-center justify-center text-center space-y-6 mt-32 ">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold">
                 Build the Future with SkyLight
               </h1>
@@ -58,11 +58,11 @@ export default function Career() {
             </div>
           </motion.div>
         </section>
-        <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="grid md:grid-cols-3 gap-8 text-center">
+        <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="grid md:grid-cols-3 gap-8 text-center px-48">
           {["Innovation", "Integrity", "Inclusivity"].map((title, index) => (
             <div key={index} className="p-6 border border-purple-700 rounded-xl bg-[#1A1A2E]">
               <h3 className="text-xl font-bold text-purple-400 mb-2">{title}</h3>
-              <p className="text-gray-300">
+              <p className="text-gray-300 ">
                 {title === "Innovation"
                   ? "We create cutting-edge solutions that transform industries."
                   : title === "Integrity"
@@ -73,7 +73,7 @@ export default function Career() {
           ))}
         </motion.section>
 
-        <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+        <motion.section className="px-48" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
           <h2 className="text-4xl font-bold text-purple-500 mb-10 text-center">Open Positions</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {jobs.map((job) => (
@@ -97,7 +97,7 @@ export default function Career() {
           </div>
         </motion.section>
 
-        <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center">
+        <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="text-center px-48">
           <h2 className="text-4xl font-bold text-purple-500 mb-8">Perks & Benefits</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {["100% Remote Work", "Flexible Hours", "Competitive Salary", "Learning Budget", "Health Insurance", "Annual Retreats"].map((perk, i) => (

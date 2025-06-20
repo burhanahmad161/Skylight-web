@@ -64,17 +64,30 @@ export default function About() {
       </section>
 
       {/* Core Values */}
-      <section className="bg-[#1A1A2E] py-20 px-6">
-        <h2 className="text-3xl font-bold text-purple-500 text-center mb-12">Core Values</h2>
-        <div className="grid gap-10 md:grid-cols-3 max-w-6xl mx-auto text-center">
-          {[{ title: "Integrity", desc: "We uphold the highest standards in every project." }, { title: "Innovation", desc: "We embrace challenges and seek better solutions." }, { title: "Collaboration", desc: "We believe success is built on teamwork and trust." }].map(({ title, desc }) => (
-            <div key={title} className="p-6 bg-[#0F0F1A] border border-purple-700 rounded-xl">
-              <h3 className="text-xl font-semibold text-purple-500 mb-2">{title}</h3>
-              <p className="text-gray-400">{desc}</p>
+      <section className="bg-[#1A1A2E] py-24 px-6">
+        <h2 className="text-4xl font-extrabold text-purple-500 text-center mb-16 tracking-wide">
+          Core Values
+        </h2>
+        <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+          {[
+            { title: "Integrity", desc: "We uphold the highest standards in every project." },
+            { title: "Innovation", desc: "We embrace challenges and seek better solutions." },
+            { title: "Collaboration", desc: "We believe success is built on teamwork and trust." }
+          ].map(({ title, desc }) => (
+            <div
+              key={title}
+              className="group relative p-8 bg-[#0F0F1A] rounded-2xl shadow-[0_0_15px_0_rgba(128,90,213,0.4)] hover:shadow-[0_0_25px_5px_rgba(128,90,213,0.6)] transition-shadow duration-300"
+            >
+              <h3 className="text-2xl font-bold text-purple-400 mb-4 group-hover:text-purple-300 transition duration-200">
+                {title}
+              </h3>
+              <p className="text-gray-400 leading-relaxed">{desc}</p>
             </div>
           ))}
         </div>
       </section>
+
+
 
       {/* Partners Section */}
       <section className="py-20 px-6 max-w-7xl mx-auto">

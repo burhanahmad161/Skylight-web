@@ -28,7 +28,7 @@ export default function Contact() {
           <div className="space-y-8">
             <ContactInfoItem icon={<FaEnvelope />} label="Email" value="contact@skylight.com" href="mailto:contact@skylight.com" />
             <ContactInfoItem icon={<FaPhone />} label="Phone" value="+1 (234) 567-890" href="tel:+1234567890" />
-            <ContactInfoItem icon={<FaMapMarkerAlt />} label="Address" value="123 SkyLight Ave, Tech City, USA" />
+            <ContactInfoItem icon={<FaMapMarkerAlt />} label="Address" value="169B Architect Engineering housing society, Lahore Pakistan" />
           </div>
 
           <div className="pt-8 border-t border-purple-700 mt-8">
@@ -104,14 +104,15 @@ export default function Contact() {
         <div className="w-full h-64 rounded-xl overflow-hidden shadow-lg border border-purple-700">
           <iframe
             title="SkyLight Location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019367068576!2d-122.41941518468156!3d37.77492977975957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808d8917e5ed%3A0xa12f0e2f4e0c34e3!2s123%20Market%20St%2C%20San%20Francisco%2C%20CA%2094105%2C%20USA!5e0!3m2!1sen!2s!4v1696205469876!5m2!1sen!2s"
+            src="https://www.google.com/maps?q=169B%20Architect%20Engineering%20housing%20society,%20Lahore%20Pakistan&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          >
+          </iframe>
         </div>
       </motion.section>
     </main>
